@@ -1,6 +1,9 @@
 " =======
 " General
 " =======
+set nocompatible
+filetype plugin indent on
+syntax on
 let g:python_host_prog = 'C:\Python27\python.exe'
 let g:python3_host_prog = 'C:\Python37\python.exe'
 
@@ -13,13 +16,18 @@ set listchars=tab:»\ ,trail:-,extends:»,precedes:«,nbsp:% "space 対応"
 set clipboard=unnamed "clipbordと対応"
 set ruler "カーソルが何行目の何列目に置かれているかを表示"
 set autoindent "改行時に前の行のインデントを継続する"
-set tabstop=2 "画面上でタブ文字が占める幅"
-set softtabstop=2 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅"
-set shiftwidth=2 "自動インデントでずれる幅"
+set tabstop=4 "画面上でタブ文字が占める幅"
+set softtabstop=4 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅"
+set shiftwidth=4 "自動インデントでずれる幅"
 set expandtab "タブ入力を複数の空白入力に置き換える"
 set cursorline "横のカーソルライン表示"
 set cursorcolumn "縦のカーソルライン表示"
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する"
+set ignorecase
+set smartcase
+
+nnoremap <silent> <Space>ev :<C-u>edit $MYVIMRC<CR>
+nnoremap <silent> <Space>rv :<C-u>source $MYVIMRC<CR>
 
 set rtp+=C:\ProgramData\chocolatey\bin\
 autocmd vimenter * cd ~/
@@ -91,11 +99,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-endwise'
 Plug 'Townk/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
+
 Plug 'tpope/vim-fugitive'
 Plug 'osyo-manga/vim-anzu'
 
 Plug 'majutsushi/tagbar'
-let g:tagbar_ctags_bin = '~/AppData/Local/nvim/tools/ctags/ctags.exe'
+let g:tagbar_ctags_bin = 'C:\ProgramData\chocolatey\bin\ctags.exe'
 nmap <C-t> :TagbarToggle<CR>
 
 "Plug 'autozimu/LanguageClient-neovim'
