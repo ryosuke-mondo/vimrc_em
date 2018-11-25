@@ -32,6 +32,8 @@ Plug 'tpope/vim-endwise'
 Plug 'Townk/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'terryma/vim-expand-region'
+
 Plug 'tpope/vim-fugitive'
 Plug 'osyo-manga/vim-anzu'
 

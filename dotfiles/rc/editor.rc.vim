@@ -9,24 +9,27 @@ set rtp+=C:\ProgramData\chocolatey\bin\
 
 autocmd vimenter * cd ~/
 
-set number "桁表示"
+set number
 set backspace=indent,eol,start
-set mouse=a   "マウス有効"
-set laststatus=2 "ステータスラインの表示"
-set list "スペースの可視化"
-set listchars=tab:»\ ,trail:-,extends:»,precedes:«,nbsp:% "space 対応"
-set clipboard=unnamed "clipbordと対応"
-set ruler "カーソルが何行目の何列目に置かれているかを表示"
-set autoindent "改行時に前の行のインデントを継続する"
-set tabstop=4 "画面上でタブ文字が占める幅"
-set softtabstop=4 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅"
-set shiftwidth=4 "自動インデントでずれる幅"
-set expandtab "タブ入力を複数の空白入力に置き換える"
-set cursorline "横のカーソルライン表示"
-set cursorcolumn "縦のカーソルライン表示"
-set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する"
+set mouse=a "enable mouse
+set laststatus=2
+set list "make space visible
+set listchars=tab:»\ ,trail:-,extends:»,precedes:«,nbsp:% 
+set clipboard=unnamed
+set ruler 
+set autoindent 
+set tabstop=4 
+set softtabstop=4 
+set shiftwidth=4 
+set expandtab 
+set smarttab
+set cursorline 
+set cursorcolumn 
+set smartindent 
 set ignorecase
 set smartcase
+set splitbelow
+set textwidth=0
 
 " =======================
 "setting for Color scheme
