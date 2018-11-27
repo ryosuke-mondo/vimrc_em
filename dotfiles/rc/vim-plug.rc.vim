@@ -37,6 +37,8 @@ Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-fugitive'
 Plug 'osyo-manga/vim-anzu'
 
+Plug 't9md/vim-quickhl'
+
 Plug 'majutsushi/tagbar'
 nmap <C-t> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = 'C:\ProgramData\chocolatey\bin\ctags.exe'

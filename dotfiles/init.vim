@@ -35,3 +35,5 @@ call s:source_rc('vim-plug.rc.vim')
 call s:source_rc('LanguageClient.rc.vim')
 
 call s:source_rc('NERDTree.rc.vim')
+
+call s:source_rc('personal.rc.vim')

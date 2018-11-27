@@ -1,4 +1,3 @@
-if( $false ) {
 #install chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
@@ -20,7 +19,7 @@ md $env:Appdata\..\local\nvim\autoload\
 $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 $plug_dst = "$env:Appdata\..\local\nvim\autoload\plug.vim"
 (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($plug_dst))
-}
+
 $script_path = $MyInvocation.MyCommand.Path
 
 $mklink = Join-Path (Split-Path -Parent $script_path) "mklink.bat"
